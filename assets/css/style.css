@@ -1,3 +1,5 @@
+ body { font-family: Arial; }
+
 #banner {
   background-color: rgb(7, 82, 7);
   height: 100px;
@@ -17,4 +19,14 @@
   width: 400px;
   height: 160px;
   background: lightgray;
+}
+
+nav li {
+  display: inline;
+  padding: 20px;
+}
+
+contact li {
+  display: inline;
+  padding: 20px;
 }
