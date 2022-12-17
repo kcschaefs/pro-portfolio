@@ -1,22 +1,46 @@
  body { font-family: Arial; }
 
+ /* banner not working*/
 #banner {
-  padding: 20px;
+  height: 10%;
+}
+
+.container{
+  display: flex;
+  background-color: green;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.heading h1 {
+  display: flex;
+  width: 275px;
+}
+
+.subtitle {
+  display: flex;
+  margin-top: -20px;
+}
+
+.container nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 5px;
 }
 
 .avatar {
-  position: relative;
-  top: -130px;
-  left: 30px;
-  border-style:groove;
-  border-color: black;
   vertical-align: middle;
-  width: 100px;
-  height: 150px;
-
-  border-radius: 25%;
-  z-index: 1;
+  width: 150px;
+  height: 200px;
+  border-radius: 25px;
 }
+
 
 
 .block {
@@ -29,9 +53,96 @@
 nav li {
   display: inline;
   padding: 20px;
+  text-align: right;
 }
 
 contact li {
   display: inline;
   padding: 20px;
 }
+
+/* need to figure out how to get my headshot image and the text inline next to each other
+flex box? */
+
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/*
+.aboutMe img {
+  display:flex;
+  padding-right: 20px;
+}
+*/
+.aboutMe p {
+  padding: 0px;
+  margin: 0px;
+}
+/*
+.product {
+  display: flex;
+  width: 90%;
+  margin: 1% auto;
+}
+
+.product button {
+  font-size: 150%;
+}
+
+.product-slideshow {
+  display: flex;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-details {
+  margin-left: 3%;
+  flex: 0 0 60%;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav,
+  .product {
+    flex-direction: column;
+  }
+
+  .product-slideshow button {
+    /* Removes the slideshow buttons from the document flow 
+    display: none;
+  }
+
+  .product-details {
+    margin-left: 0;
+  }
+}
+*/
+
+
+/*
+@media screen and (max-width: 768px) {
+  /* Use flex-direction to stack the navbar, sidebar, and body
+  main,
+  nav {
+    flex-direction: column;
+  }
+  /* Make the sidebar stack below the body 
+  aside {
+    order: 2;
+  }
+  /* Change the header background 
+  header {
+    background: #772014;
+  }
+  /* Change the navbar and footer background 
+  nav,
+  footer {
+    background-color: #bb8588;
+  }
+}
+*/

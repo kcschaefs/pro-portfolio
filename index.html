@@ -10,8 +10,11 @@
 </head>
 
 <body>
-  <header>
-    <h1>Kristen Schaefer</h1>
+  <header class="container">
+    <div class="heading">
+      <h1>Kristen Schaefer</h1>
+      <h3 class="subtitle">they/them</h3>
+   </div>
     <nav>
       <ul>
         <li>About Me</li>
@@ -20,29 +23,70 @@
         <li>Resume</li>
       </ul>
     </nav>
-
   </header>
 
+  <br>
+  <br>
   <div id=banner>
-    <img src="./assets/images/banner.jpeg" height=100px width=100%>
-    <img src="./assets/images/headshot.png" alt="Avatar" class="avatar">
+    <img src="./assets/images/banner-1.jpg" height= 150px>
   </div>
-
-  <main>
 
     <section>
       <h2>About Me</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis delectus sed quasi? Atque quae dolor maiores deleniti illum quod voluptatum voluptate corrupti et. Esse iure ad fugit, rerum sed fuga!</p>
+      <div class="aboutMe">
+      <img src="./assets/images/headshot.png" alt="Avatar" class="avatar">
+       <p>Personal: I'm a super cool person that you should definitely hire!
+        <br>
+        <br>
+        Professional: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa dolores dicta illo id quos aliquam, similique esse odio. Eaque harum cum, officiis expedita labore commodi omnis ut aliquam deserunt?</p>
+    </div>
     </section>
+<!--
+    <main>
+      <section class="product">
+        <div class="product-slideshow">
+          <button>&lt;</button>
+          <!-- Wrap the image in a div to avoid weird flexbox behavior 
+          <div>
+            <img class="product-image" src="./assets/images/camera.jpg" alt="camera" />
+          </div>
+          <button>&gt;</button>
+        </div>
+        <div class="product-details">
+          <h2>Camera Product Page</h2>
+          <p>The slideshow buttons on the left won't work until we add JavaScript to the page, but we can at least set up the proper alignment with CSS.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore sunt culpa dicta iure ipsa aperiam impedit tenetur optio temporibus, nostrum aliquam rerum voluptate! Blanditiis sit ipsam praesentium esse facilis!</p>
+          <p>Price: $300</p>
+          <p>
+            <button>Buy Now</button>
+          </p>
+        </div>
+      </section>
+    </main>
+-->
 
-    <section>
+
+    <main>
       <h2>Work</h2>
       <div class=block>
 
       </div>
-    </section>
 
-    <section>
+      <!--
+      <section class="card">
+        <header>Camera</header>
+        <img src="./assets/images/camera.jpg" alt="camera" />
+        <p>Price: $300</p>
+      </section>
+      <section class="card">
+        <header>Tablet</header>
+        <img src="./assets/images/tablet.jpg" alt="tablet" />
+        <p>Price: $150</p>
+      </section>
+      -->
+    </main>
+
+    <asie>
       <h2>Contact Me</h2>
 
       <contact>
@@ -53,12 +97,9 @@
        <li><a href="https://www.linkedin.com/in/kristen-schaefer-dev" target="blank">LinkedIn</a></li>
      </ul>
     </contact>
-    </section>
+  </aside>
 
 
-
-
-  </main>
 
 
 </body>
