@@ -2,12 +2,14 @@
 
  /* banner not working*/
 #banner {
-  height: 10%;
+  width: 100%;
 }
 
 .container{
   display: flex;
-  background-color: green;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
 }
 
 .heading {
@@ -34,6 +36,7 @@
   margin-bottom: 5px;
 }
 
+
 .avatar {
   vertical-align: middle;
   width: 150px;
@@ -41,7 +44,32 @@
   border-radius: 25px;
 }
 
+.container .avatar {
+  display: flex;
+  border-style: solid;
+  border-color: blue;
+  border-width: 2px;
+}
 
+.container p{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.mainBlock {
+  display: block;
+  width: 400px;
+  height: 160px;
+  background: lightgray;
+}
 
 .block {
   display: block;
@@ -61,9 +89,6 @@ contact li {
   padding: 20px;
 }
 
-/* need to figure out how to get my headshot image and the text inline next to each other
-flex box? */
-
 .aboutMe {
   display: flex;
   flex-direction: row;
@@ -71,16 +96,21 @@ flex box? */
   gap: 20px;
 }
 
-/*
-.aboutMe img {
-  display:flex;
-  padding-right: 20px;
-}
-*/
 .aboutMe p {
   padding: 0px;
   margin: 0px;
 }
+
+.bold-style {
+  font-weight: bold;
+}
+
+/* border code
+  border-style: solid;
+  border-color: blue;
+  border-width: 2px;
+  */
+
 /*
 .product {
   display: flex;
