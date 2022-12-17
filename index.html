@@ -17,9 +17,9 @@
    </div>
     <nav>
       <ul>
-        <li>About Me</li>
-        <li>Work</li>
-        <li>Contact Me</li>
+        <li><a href="#aboutMe">About Me</a></li>
+        <li><a href=#work>Work</a></li>
+        <li><a href=#contactMe>Contact Me</a></li>
         <li>Resume</li>
       </ul>
     </nav>
@@ -27,18 +27,18 @@
 
   <br>
   <br>
-  <div id=banner>
-    <img src="./assets/images/banner-1.jpg" height= 150px>
+  <div class="container">
+    <img id="banner" src="./assets/images/banner-1.jpg">
   </div>
 
     <section>
-      <h2>About Me</h2>
-      <div class="aboutMe">
-      <img src="./assets/images/headshot.png" alt="Avatar" class="avatar">
-       <p>Personal: I'm a super cool person that you should definitely hire!
-        <br>
-        <br>
-        Professional: Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa dolores dicta illo id quos aliquam, similique esse odio. Eaque harum cum, officiis expedita labore commodi omnis ut aliquam deserunt?</p>
+      <h2 class="card">About Me</h2>
+      <div class="container">
+      <img class="avatar" src="./assets/images/headshot.png" alt="Avatar">
+      <div class="about">
+      <p><span class="bold-style">Professional</span>Seasoned business professional gaining a certification in fullstack development. I have over 10 years of experience in management, operations, and human resources. I enjoy workign in a collaborative and flexibile environment that focuses on quality and effectiveness. I am looking to make the career change into developmnet as it will better utilize my skills and capabilities. 
+        <p><span class="bold-style">Personal</span>I enjoy playing video games, reading, psychology, and sociological structures. I have a quirky, playful personality. I'm super cool and you should definitely hire me!</p>
+        </div>
     </div>
     </section>
 <!--
@@ -67,27 +67,43 @@
 
 
     <main>
-      <h2>Work</h2>
-      <div class=block>
-
-      </div>
-
-      <!--
-      <section class="card">
-        <header>Camera</header>
-        <img src="./assets/images/camera.jpg" alt="camera" />
-        <p>Price: $300</p>
-      </section>
-      <section class="card">
-        <header>Tablet</header>
-        <img src="./assets/images/tablet.jpg" alt="tablet" />
-        <p>Price: $150</p>
-      </section>
-      -->
+      <h2 class="card">Work</h2>
+        <div class="container">
+          <div class="mainProjectCard">
+          <a href="https://kcschaefs.github.io/prework-study-guide/" target="blank"><img id="mainProjectImg" src="./assets/images/prework-study-guide.png" alt="A person completing their homework"></a>
+         <!-- <p id="mainTextOverlay">Bootcamp Prework Study Guide</p>-->
+        </div>
+        </div>
+        <div class="container">
+          <div class="projectCard">
+            <a href="https://hashnode.com/post/30-web-developer-portfolios-to-inspire-you-cknfx6wdg069kxws1bjjv8mhw" target="blank">
+              <img src="./assets/images/web-portfolios.png" alt="A person surrounded by web content">
+            </a>
+            <p class="textOverlay">Portfolio Inspiration </p>
+          </div>
+          <div class="projectCard">
+            <a href="https://www.getty.edu/art/exhibitions/late_manet/" target="blank">
+              <img src="./assets/images/manet.jpg" alt="Closeup Detail of Manet's Jeanne (Spring)">
+            </a>
+            <p class="textOverlay">Yay for Art! </p>
+          </div>
+          <div class="projectCard">
+            <a href="https://stackoverflow.com/" target="blank">
+              <img src="./assets/images/stack-overflow.jpeg" alt="Stack Overflow Logo">
+            </a>
+            <p class="textOverlay">Stack Overflow </p>
+          </div>
+          <div class="projectCard">
+            <a href="https://www.fanpop.com/clubs/star-trek-the-next-generation" target="blank">
+              <img src="./assets/images/enterprise.jpeg" alt="Starship Enterprise D">
+            </a>
+            <p class="textOverlay">I am a huge nerd </p>
+          </div>
+        </div>
     </main>
 
-    <asie>
-      <h2>Contact Me</h2>
+    <aside>
+      <h2 class="card">Contact Me</h2>
 
       <contact>
       <ul>
