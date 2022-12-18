@@ -1,34 +1,76 @@
  body { 
   font-family: Arial; 
-  background-color: cadetblue;
-}
-
- /* banner not working*/
-#banner {
-  width: 100%;
+  background-color: #222546;
+  color: lightgray;
 }
 
 .container{
   display: flex;
+  /*
   border-style: solid;
   border-color: black;
   border-width: 2px;
+  */
+}
+
+.bold-style {
+  font-weight: bold;
+}
+
+.card {
+  min-width: 100px;
+  max-width: 100px;
+  border-style: solid;
+  border-color: #735AB6;
+  border-width: 3px;
+  border-top: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+  text-align: right;
+  align-items: stretch;
+  padding: 10px;
+  margin: 10px;
+  color: #F7F8FA;
+}
+
+/* header + nav bar  ----------------------------------------------- */
+
+header {
+  /*
+  background-color: #008C8F;
+  */
+  color: lightgray;
+  /*
+  border-style: solid;
+  border-color: #224168;
+  border-width: 3px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  */
 }
 
 .heading {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 10px;
+
 }
 
 .heading h1 {
   display: flex;
-  width: 275px;
+  width: 500px;
+  color: #F7F8FA;
+  font-size: 50px;
 }
 
 .subtitle {
   display: flex;
-  margin-top: -20px;
+  margin-top: -35px;
+  color: #008C8F;
+  font-size: 25px;
 }
 
 .container nav {
@@ -39,12 +81,25 @@
   margin-bottom: 5px;
 }
 
+nav li {
+  display: inline;
+  padding: 20px;
+  text-align: right;
+}
+
+/* banner  ----------------------------------------------- */
+
 .container #banner{
   height: 150px;
   width: fit-content;
   
 }
+ /* banner not working  -------- */
+ #banner {
+  width: 100%;
+}
 
+/* about me section with avatar pic  --------------------------------------  */
 .avatar {
   vertical-align: middle;
   width: 150px;
@@ -57,12 +112,6 @@
   margin-top:15px;
 }
 
-.container p{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 .about p {
   display: flex;
   flex-direction: column;
@@ -70,11 +119,25 @@
   margin-left: 10px;
 }
 
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.aboutMe p {
+  padding: 0px;
+  margin: 0px;
+}
+
 .container div {
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
+
+/* work section ----------------------------------------------- */
 
 .mainProjectCard {
   display: flex;
@@ -86,8 +149,6 @@
 .mainProjectCard #mainProjectImg {
   height: 100%;
   width:100%;
-
-
 }
 
 .projectCard {
@@ -131,41 +192,13 @@
   border-color:cadetblue;
 }
 
-nav li {
-  display: inline;
-  padding: 20px;
-  text-align: right;
-}
+/* contact me section ----------------------------------------------- */
 
 contact li {
   display: inline;
   padding: 20px;
 }
 
-.aboutMe {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-}
-
-.aboutMe p {
-  padding: 0px;
-  margin: 0px;
-}
-
-.bold-style {
-  font-weight: bold;
-}
-
-.card {
-  border-style: solid;
-  border-color: black;
-  border-width: 3px;
-  border-top: 0px;
-  border-right: 0px;
-  border-left: 0px;
-}
 
 /* border code
   border-style: solid;
