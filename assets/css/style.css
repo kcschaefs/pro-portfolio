@@ -37,10 +37,43 @@ body {
 
 a:link {
   color: rgb(199, 198, 198);
+  text-decoration: none; 
 }
 
 a:visited {
   color: #008C8F;
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #008C8F;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: rgb(199, 198, 198);
+  text-decoration: none; 
+}
+footer a:hover {
+  color: rgb(199, 198, 198);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav img:hover {
+  border-color: #008C8F;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #008C8F;
+  box-shadow: 0 0 7px 5px #008C8F;
+}
+.containerWork2 .projectCard:hover {
+  box-shadow: 0 0 7px 10px #376AA9;
+}
+
+.containerWork .mainProjectCard:hover {
+  box-shadow: 0 0 7px 10px #376AA9;
 }
 
 /* header + nav bar  ----------------------------------------------- */
@@ -71,7 +104,7 @@ a:visited {
   margin-top: -35px;
   color: #008C8F;
   font-size: 25px;
-  text-shadow: 3px 3px 2px #32619A;
+  text-shadow: 2px 2px 2px #32619A;
 }
 
 .containerHead nav {
@@ -133,7 +166,8 @@ nav li {
 
 .containerWork{
   display: flex;
-  width: 100%;
+  width: fit-content;
+  margin-bottom: 10px;
 }
 
 .mainProjectCard {
@@ -144,8 +178,6 @@ nav li {
   position:relative;
   text-align: right;
   color: #224168;
-  margin-bottom: 10px;
-  margin-right: 10px;
 }
 
 .projectCard {
@@ -179,6 +211,7 @@ nav li {
   right: 0px;
   font-weight: bold;
   background-color: #008C8F;
+  line-height: 30px;
   width:100%;
   color: #F7F8FA;
 }
