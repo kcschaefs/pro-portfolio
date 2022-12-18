@@ -1,73 +1,153 @@
- body { 
+body { 
   font-family: Arial; 
-  background-color: cadetblue;
+  background-color: #222546;
+  color: rgb(199, 198, 198);
 }
 
- /* banner not working*/
-#banner {
-  width: 100%;
-}
-
-.container{
+.container {
   display: flex;
+  /*
   border-style: solid;
-  border-color: black;
+  border-color: red;
   border-width: 2px;
+  */
+  margin-bottom:150px;
+}
+
+.bold-style {
+  font-weight: bold;
+}
+
+.card {
+  min-width: 150px;
+  max-width: 150px;
+  border-style: solid;
+  border-color: #735AB6;
+  border-width: 3px;
+  border-left: 0px;
+  border-bottom: 0px;
+  text-align: right;
+  align-items: stretch;
+  padding: 15px;
+  margin: 10px;
+  color: #F7F8FA;
+  text-shadow: 3px 3px 2px #008C8F;
+  box-shadow: 5px -5px 5px #2D578B;
+}
+
+a:link {
+  color: rgb(199, 198, 198);
+  text-decoration: none; 
+}
+
+a:visited {
+  color: #008C8F;
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #008C8F;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: rgb(199, 198, 198);
+  text-decoration: none; 
+}
+footer a:hover {
+  color: rgb(199, 198, 198);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav img:hover {
+  border-color: #008C8F;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #008C8F;
+  box-shadow: 0 0 7px 5px #008C8F;
+}
+.containerWork2 .projectCard:hover {
+  box-shadow: 0 0 7px 10px #376AA9;
+}
+
+.containerWork .mainProjectCard:hover {
+  box-shadow: 0 0 7px 10px #376AA9;
+}
+
+/* header + nav bar  ----------------------------------------------- */
+
+.containerHead {
+  display: flex;
+  margin-bottom:75px;
 }
 
 .heading {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 10px;
+
 }
 
 .heading h1 {
   display: flex;
-  width: 275px;
+  width: 500px;
+  color: #F7F8FA;
+  font-size: 50px;
+  text-shadow: 3px 3px 2px #008C8F;
 }
 
 .subtitle {
   display: flex;
-  margin-top: -20px;
+  margin-top: -35px;
+  color: #008C8F;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px #32619A;
 }
 
-.container nav {
+.containerHead nav {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: end;
   margin-bottom: 5px;
+  color: rgb(199, 198, 198);
 }
 
-.container #banner{
-  height: 150px;
-  width: fit-content;
-  
+nav li {
+  display: inline;
+  padding: 30px;
+  text-align: right;
+  font-size: 20px;
 }
+
+
+/* about me section with avatar pic  --------------------------------------  */
 
 .avatar {
   vertical-align: middle;
-  width: 150px;
+  width: 130px;
   height: 200px;
   border-radius: 25px;
+  box-shadow: 3px 3px 7px #32619A;
 }
 
 .container .avatar {
   display: flex;
   margin-top:15px;
-}
-
-.container p{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  margin-left: 50px;
 }
 
 .about p {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
-  margin-left: 10px;
+  align-items: center;
+  margin-left: 50px;
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .container div {
@@ -76,42 +156,53 @@
   flex-direction: row;
 }
 
-.mainProjectCard {
+/* work section ----------------------------------------------- */
+
+.containerMain {
   display: flex;
-  text-align: right;
-  width: 100%;
-  height: 400px;
+  flex-wrap: wrap;
+  margin-left: 50px;
 }
 
-.mainProjectCard #mainProjectImg {
-  height: 100%;
-  width:100%;
+.containerWork{
+  display: flex;
+  width: fit-content;
+  margin-bottom: 10px;
+}
 
-
+.mainProjectCard {
+  display: flex;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #008C8F;
+  position:relative;
+  text-align: right;
+  color: #224168;
 }
 
 .projectCard {
   display: flex;
   border-style: solid;
   border-width: 5px;
-  border-color: cadetblue;
-  margin:-5px;
-  vertical-align: middle;
-  justify-content: center;
+  border-color: #008C8F;
   position:relative;
   text-align: right;
-  width: 25%;
-  height: 200px;
+  color: #224168;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
-.mainTextOverlay {
-  position: absolute;
-  bottom: -18px;
-  right: 0px;
-  font-size: larger;
-  font-weight: bold;
-  background-color: cadetblue;
-  width:50%;
+.mainProjectCard #mainProjectImg {
+  height: 400px;
+  width: 822px;
+  max-width: 100%;
+}
+
+.containerWork2{
+  display: flex;
+  vertical-align: middle;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .textOverlay {  
@@ -119,122 +210,28 @@
   bottom: -17px;
   right: 0px;
   font-weight: bold;
-  background-color: lightgray;
-  width:75%;
+  background-color: #008C8F;
+  line-height: 30px;
+  width:100%;
+  color: #F7F8FA;
 }
 
 .projectCard img {
-  width: 100%;
+  width: 400px;
   height: 200px;
-  border-style: solid;
-  border-width: 1px;
-  border-color:cadetblue;
+  max-width: 100%;
 }
 
-nav li {
-  display: inline;
-  padding: 20px;
-  text-align: right;
+
+/* contact me section ----------------------------------------------- */
+
+li img {
+  height: 20px;
 }
 
-contact li {
-  display: inline;
-  padding: 20px;
+/* footer section ----------------------------------------------- */
+
+footer {
+  text-align: center;
+  margin-top: -75px;
 }
-
-.aboutMe {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-}
-
-.aboutMe p {
-  padding: 0px;
-  margin: 0px;
-}
-
-.bold-style {
-  font-weight: bold;
-}
-
-.card {
-  border-style: solid;
-  border-color: black;
-  border-width: 3px;
-  border-top: 0px;
-  border-right: 0px;
-  border-left: 0px;
-}
-
-/* border code
-  border-style: solid;
-  border-color: blue;
-  border-width: 2px;
-  */
-
-/*
-.product {
-  display: flex;
-  width: 90%;
-  margin: 1% auto;
-}
-
-.product button {
-  font-size: 150%;
-}
-
-.product-slideshow {
-  display: flex;
-}
-
-.product-image {
-  width: 100%;
-}
-
-.product-details {
-  margin-left: 3%;
-  flex: 0 0 60%;
-}
-
-@media screen and (max-width: 768px) {
-  main,
-  nav,
-  .product {
-    flex-direction: column;
-  }
-
-  .product-slideshow button {
-    /* Removes the slideshow buttons from the document flow 
-    display: none;
-  }
-
-  .product-details {
-    margin-left: 0;
-  }
-}
-*/
-
-
-/*
-@media screen and (max-width: 768px) {
-  /* Use flex-direction to stack the navbar, sidebar, and body
-  main,
-  nav {
-    flex-direction: column;
-  }
-  /* Make the sidebar stack below the body 
-  aside {
-    order: 2;
-  }
-  /* Change the header background 
-  header {
-    background: #772014;
-  }
-  /* Change the navbar and footer background 
-  nav,
-  footer {
-    background-color: #bb8588;
-  }
-}
-*/

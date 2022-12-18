@@ -6,116 +6,115 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
   <title>Kristen Schaefer Portfolio</title>
 </head>
 
 <body>
-  <header class="container">
+  <header class="containerHead">
+    <a name="top"></a>
     <div class="heading">
       <h1>Kristen Schaefer</h1>
       <h3 class="subtitle">they/them</h3>
-   </div>
+    </div>
     <nav>
       <ul>
-        <li><a href="#aboutMe">About Me</a></li>
-        <li><a href=#work>Work</a></li>
-        <li><a href=#contactMe>Contact Me</a></li>
-        <li>Resume</li>
+        <li><a href="#about">about me</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#contact">contact me</a></li>
+        <li><a href="./assets/images/Resume - Kristen Schaefer v1.pdf" target="blank">resume</a></li>
+        <li><a href="https://www.linkedin.com/in/kristen-schaefer-dev" target="blank"><img src="./assets/images/linkedin-logo.svg" alt="LinkedIn Logo"></a></li>
       </ul>
     </nav>
   </header>
 
-  <br>
-  <br>
+<!--
   <div class="container">
     <img id="banner" src="./assets/images/banner-1.jpg">
   </div>
 
-    <section>
-      <h2 class="card">About Me</h2>
-      <div class="container">
-      <img class="avatar" src="./assets/images/headshot.png" alt="Avatar">
-      <div class="about">
-      <p><span class="bold-style">Professional</span>Seasoned business professional gaining a certification in fullstack development. I have over 10 years of experience in management, operations, and human resources. I enjoy workign in a collaborative and flexibile environment that focuses on quality and effectiveness. I am looking to make the career change into developmnet as it will better utilize my skills and capabilities. 
-        <p><span class="bold-style">Personal</span>I enjoy playing video games, reading, psychology, and sociological structures. I have a quirky, playful personality. I'm super cool and you should definitely hire me!</p>
-        </div>
-    </div>
-    </section>
-<!--
-    <main>
-      <section class="product">
-        <div class="product-slideshow">
-          <button>&lt;</button>
-          <!-- Wrap the image in a div to avoid weird flexbox behavior 
-          <div>
-            <img class="product-image" src="./assets/images/camera.jpg" alt="camera" />
-          </div>
-          <button>&gt;</button>
-        </div>
-        <div class="product-details">
-          <h2>Camera Product Page</h2>
-          <p>The slideshow buttons on the left won't work until we add JavaScript to the page, but we can at least set up the proper alignment with CSS.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore sunt culpa dicta iure ipsa aperiam impedit tenetur optio temporibus, nostrum aliquam rerum voluptate! Blanditiis sit ipsam praesentium esse facilis!</p>
-          <p>Price: $300</p>
-          <p>
-            <button>Buy Now</button>
-          </p>
-        </div>
-      </section>
-    </main>
 -->
 
+  <section>
+    <a name="about"></a>
+    <div class="container">
+      <h2 class="card">about me</h2>
+      <img class="avatar" src="./assets/images/headshot.png" alt="Avatar">
+      <div class="about">
+        <p><!--<span class="bold-style">professional</span>-->Aspiring web developer based in Minneapolis with over 10 years of business experience. I enjoy working in a collaborative and flexibile environment that focuses on quality + effectiveness and creating functional user experiences.
+      </div>
+    </div>
+  </section>
 
-    <main>
-      <h2 class="card">Work</h2>
-        <div class="container">
+
+
+  <main>
+
+    <a name="work"></a>
+    <div class="container">
+      <h2 class="card">work</h2>
+
+      <div class="containerMain">
+        <div class="containerWork">
           <div class="mainProjectCard">
-          <a href="https://kcschaefs.github.io/prework-study-guide/" target="blank"><img id="mainProjectImg" src="./assets/images/prework-study-guide.png" alt="A person completing their homework"></a>
-         <!-- <p id="mainTextOverlay">Bootcamp Prework Study Guide</p>-->
+            <a href="https://kcschaefs.github.io/prework-study-guide/" target="blank"><img id="mainProjectImg" src="./assets/images/prework-study-guide.png" alt="A person completing their homework">
+            </a>
+            <p class="textOverlay">bootcamp prework study guide</p>
+          </div>
         </div>
-        </div>
-        <div class="container">
+    
+
+        <div class="containerWork2">
           <div class="projectCard">
             <a href="https://hashnode.com/post/30-web-developer-portfolios-to-inspire-you-cknfx6wdg069kxws1bjjv8mhw" target="blank">
               <img src="./assets/images/web-portfolios.png" alt="A person surrounded by web content">
             </a>
-            <p class="textOverlay">Portfolio Inspiration </p>
+            <p class="textOverlay">portfolio inspiration </p>
           </div>
           <div class="projectCard">
             <a href="https://www.getty.edu/art/exhibitions/late_manet/" target="blank">
               <img src="./assets/images/manet.jpg" alt="Closeup Detail of Manet's Jeanne (Spring)">
             </a>
-            <p class="textOverlay">Yay for Art! </p>
+            <p class="textOverlay">yay for art! </p>
           </div>
           <div class="projectCard">
             <a href="https://stackoverflow.com/" target="blank">
               <img src="./assets/images/stack-overflow.jpeg" alt="Stack Overflow Logo">
             </a>
-            <p class="textOverlay">Stack Overflow </p>
+            <p class="textOverlay">stack overflow </p>
           </div>
           <div class="projectCard">
             <a href="https://www.fanpop.com/clubs/star-trek-the-next-generation" target="blank">
               <img src="./assets/images/enterprise.jpeg" alt="Starship Enterprise D">
             </a>
-            <p class="textOverlay">I am a huge nerd </p>
+            <p class="textOverlay">i am a huge nerd </p>
           </div>
         </div>
-    </main>
+      </div>
+    </div>
 
-    <aside>
-      <h2 class="card">Contact Me</h2>
+  </main>
 
-      <contact>
-      <ul>
-        <li>(612) 568-3463</li>
-       <li><a href = "mailto: kristenschaefer@gmail.com" target="blank">kristencschaefer@gmail.com</a></li>
-       <li><a href= "https://github.com/kcschaefs" target="blank">GitHub</a></li>
-       <li><a href="https://www.linkedin.com/in/kristen-schaefer-dev" target="blank">LinkedIn</a></li>
-     </ul>
+
+
+  <section>
+      <a name="contact"></a>
+      <contact class="container">
+        <h2 class="card">contact me</h2>
+        <nav>
+          <ul>
+            <li>(612) 568-3463</li>
+          <li><a href = "mailto: kristenschaefer@gmail.com" target="blank">kristencschaefer@gmail.com</a></li>
+          <li><a href= "https://github.com/kcschaefs" target="blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/kristen-schaefer-dev" target="blank"><img src="./assets/images/linkedin-logo.svg" alt="LinkedIn Logo"></a></li>
+          </ul>
+        </nav>
     </contact>
-  </aside>
+  </section>
 
-
+<footer>
+  <a href="#top">&copy; 2022 Kristen Schaefer</a>
+</footer>
 
 
 </body>
