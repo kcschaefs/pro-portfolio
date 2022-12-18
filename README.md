@@ -1,8 +1,8 @@
 # Professional Portfolio for Job Candidate
 
-[Click here to view final version of webpage](https://kcschaefs.github.io/semantic_html/)
+[Click here to view final version of webpage](https://kcschaefs.github.io/pro-portfolio/)
 
-![Screenshot of the final page](./assets/images/html_refactor_screenshot.png)
+![Screenshot of the final page](./assets/images/screenshot-pro-portfolio.png)
 
 ## User Story
 An employer wants to view a candidate's portfolio to determing the quality of their work and help determine their fit for the role. This is the candidate's portfolio.
@@ -33,9 +33,6 @@ THEN I am taken to that deployed application
 - WHEN I resize the page or view the site on various screens and devices
 
 THEN I am presented with a responsive layout that adapts to my viewport
-
-## Mock-Up
-[Link to BCS Module to view mockup](https://courses.bootcampspot.com/courses/2936/assignments/47965?module_item_id=877548)
 
 
 # Grading Criteria
