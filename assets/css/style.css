@@ -44,14 +44,15 @@ a:link {
 }
 
 a:visited {
-  color: #008C8F;
+  color: rgb(199, 198, 198);
   text-decoration: none; 
 }
 
 a:hover {
   color: #008C8F;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
+  margin: auto;
 }
 
 footer a:visited {
@@ -95,6 +96,7 @@ nav img:hover {
 
 .heading h1 {
   display: flex;
+  order: 0;
   width: 500px;
   color: #F7F8FA;
   font-size: 50px;
@@ -103,6 +105,7 @@ nav img:hover {
 
 .subtitle {
   display: flex;
+  order: 2;
   margin-top: -35px;
   color: #008C8F;
   font-size: 25px;
@@ -111,6 +114,7 @@ nav img:hover {
 
 .containerHead nav {
   display: flex;
+  order: 3;
   width: 100%;
   align-items: center;
   justify-content: end;
@@ -252,6 +256,6 @@ footer img {
 >1300px need to space out
 <1200px need to move top nav link down
 <1000px need to move bottom nav
-<820px, move to ipad spacing
-<415px move to iphone spacing
+<820px, move to tablet spacing -- can skip, focus on desktop and mobile
+<415px move to mobile spacing
 */
