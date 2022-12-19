@@ -151,9 +151,10 @@ nav li {
 .about p {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 50px;
-  max-width: 600px;
+  margin-right: 40px;
+  max-width: 800px;
   font-size: 20px;
   line-height: 30px;
 }
@@ -178,6 +179,7 @@ nav li {
   display: flex;
   width: fit-content;
   margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .mainProjectCard {
@@ -212,7 +214,7 @@ nav li {
   display: flex;
   vertical-align: middle;
   justify-content: flex-start;
-  width:850px;
+  width: 850px;
 }
 
 .textOverlay {  
@@ -234,6 +236,28 @@ nav li {
 
 
 /* contact me section ----------------------------------------------- */
+
+div.container {
+  display: flex;
+}
+
+.contact-me {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.contact-me nav {
+  display: flex;
+}
+
+.contact-me li {
+  display: inline;
+  padding: auto;
+  text-align: right;
+  font-size: 20px;
+}
 
 li img {
   height: 20px;
@@ -259,3 +283,169 @@ footer img {
 <820px, move to tablet spacing -- can skip, focus on desktop and mobile
 <415px move to mobile spacing
 */
+
+/* large screen sizing -----------------------------------------------------*/
+
+@media screen and (min-width: 1300px) {
+  .container .avatar {
+    margin-left: 150px;
+  }
+
+  .about p {
+    margin-left: 100px;
+    max-width: 900px;
+  }
+
+  .containerMain {
+    margin-left: 150px;
+  }
+
+  .contact-me {
+    margin-left: 150px;
+  }
+}
+
+/* mobile sizing -----------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+  div.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    margin-bottom:50px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .card {
+    border-style: solid;
+    border-color: #735AB6;
+    border-width: 4px;
+    border-right: 0px;
+    border-top: 0px;
+    text-align: left;
+    align-items: stretch;
+    padding: 15px;
+    margin: 10px;
+    color: #F7F8FA;
+    text-shadow: 3px 3px 2px #008C8F;
+    box-shadow: -5px 5px 5px #2D578B;
+    min-width: none;
+  }
+  .containerMain {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0px;
+    width: 80%;
+  }
+  
+  .containerWork{
+    display: flex;
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+
+  .containerWork2{
+    display: flex;
+    vertical-align: middle;
+    align-content: center;
+    width: 80%;
+  }
+
+  .mainProjectCard {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width:100%;
+  }
+
+
+  .mainProjectCard #mainProjectImg {
+    width: 325px;
+  }
+
+  .projectCard {
+    margin-bottom: 20px;
+  }
+
+  .projectCard img {
+    width: stretch;
+  }
+
+  .contact-me li {
+    display: block;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 5px;
+  }
+
+  .contact-me {
+    margin-bottom: 50px;
+  }
+
+  footer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .containerHead nav {
+    display: flex;
+    order: 3;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  nav li a {
+    display: block;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 10px;
+  }
+  .containerHead {
+    margin-bottom:0px;
+  }
+}
+
+/* tablet-ish sizing -----------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+  .containerHead {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:75px;
+    justify-content: flex-start;
+  }
+
+  .containerHead nav {
+    display: flex;
+    order: 3;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+
+  nav li {
+    display: inline;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  nav ul {
+    padding: 0px;
+  }
+
+  .contact-me li {
+    display: flex;
+    flex-shrink: inherit;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 5px;
+  }
+
+  div.mainProjectCard {
+    margin-right:10px;
+  }
+}
