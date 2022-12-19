@@ -11,7 +11,11 @@ body {
   border-color: red;
   border-width: 2px;
   */
+  min-width: 50%;
   margin-bottom:150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 10%;
 }
 
 .bold-style {
@@ -19,8 +23,7 @@ body {
 }
 
 .card {
-  min-width: 150px;
-  max-width: 150px;
+  min-width: 13%;
   border-style: solid;
   border-color: #735AB6;
   border-width: 4px;
@@ -41,14 +44,15 @@ a:link {
 }
 
 a:visited {
-  color: #008C8F;
+  color: rgb(199, 198, 198);
   text-decoration: none; 
 }
 
 a:hover {
   color: #008C8F;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
+  margin: auto;
 }
 
 footer a:visited {
@@ -92,6 +96,7 @@ nav img:hover {
 
 .heading h1 {
   display: flex;
+  order: 0;
   width: 500px;
   color: #F7F8FA;
   font-size: 50px;
@@ -100,6 +105,7 @@ nav img:hover {
 
 .subtitle {
   display: flex;
+  order: 2;
   margin-top: -35px;
   color: #008C8F;
   font-size: 25px;
@@ -108,6 +114,7 @@ nav img:hover {
 
 .containerHead nav {
   display: flex;
+  order: 3;
   width: 100%;
   align-items: center;
   justify-content: end;
@@ -127,7 +134,8 @@ nav li {
 
 .avatar {
   vertical-align: middle;
-  width: 130px;
+  max-width: 130px;
+  min-width: 130px;
   height: 200px;
   border-radius: 25px;
   box-shadow: 3px 3px 7px #32619A;
@@ -136,7 +144,8 @@ nav li {
 .container .avatar {
   display: flex;
   margin-top:15px;
-  margin-left: 50px;
+  width: 30%;
+  margin-left: 45px;
 }
 
 .about p {
@@ -161,6 +170,8 @@ nav li {
   display: flex;
   flex-wrap: wrap;
   margin-left: 50px;
+  max-width: 1200px;
+  min-width: 415px;
 }
 
 .containerWork{
@@ -188,7 +199,7 @@ nav li {
   text-align: right;
   color: #224168;
   margin-bottom: 10px;
-  margin-right: 10px;
+  margin-right: auto;
 }
 
 .mainProjectCard #mainProjectImg {
@@ -201,7 +212,7 @@ nav li {
   display: flex;
   vertical-align: middle;
   justify-content: flex-start;
-  width: 100%;
+  width:850px;
 }
 
 .textOverlay {  
@@ -239,3 +250,12 @@ footer {
 footer img {
   height:30px;
 }
+
+/* responsive media section ----------------------------------------------- 
+1000px to 1300px = good orientation, don't mess with
+>1300px need to space out
+<1200px need to move top nav link down
+<1000px need to move bottom nav
+<820px, move to tablet spacing -- can skip, focus on desktop and mobile
+<415px move to mobile spacing
+*/
