@@ -7,58 +7,26 @@
 ## User Story
 An employer wants to view a candidate's portfolio to determing the quality of their work and help determine their fit for the role. This is the candidate's portfolio.
 
-## Acceptance Criteria
-GIVEN I need to sample a potential employee's previous work
+## Tasks
 
-- WHEN I load their portfolio
+- Create basic content structure in HTML
+- Add images and included alt text for accessibility
+- Add CSS styling to improve the look of the page
+- Add nav links that scroll to the corresponding spot on the webpage
+- Add nav links to resume, LinkedIn profile, and contact info to make it easier to view additional professional info about the candidate and contact them easier
+- Add "project" cards to highlight my coding projects (I don't have many so most of these are just links to resource sites or things I enjoy)
+- Added screen responsiveness and changed layout for mobile view
+- Add CSS styling to highlight/emphasize user interaction
+- Utilize GitHub for version control + code repo
+- Deploy webpage through GitHub
 
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+## Learnings
+- I learned and became much more familiar with CSS capabilities, mainly flexboxes
+- How to nest flexboxes to get the desired layout
+- How to review and test my code to remove uneccessary code
+- I became much more comfortable with Git and GitHub
+- How to utilize Google and Stack Overflow to troubleshoot issues with my code and styling
 
-- WHEN I click one of the links in the navigation
-
-THEN the UI scrolls to the corresponding section
-
-- WHEN I click on the link to the section about their work
-
-THEN the UI scrolls to a section with titled images of the developer's applications
-
-- WHEN I am presented with the developer's first application
-
-THEN that application's image should be larger in size than the others
-
-- WHEN I click on the images of the applications
-
-THEN I am taken to that deployed application
-
-- WHEN I resize the page or view the site on various screens and devices
-
-THEN I am presented with a responsive layout that adapts to my viewport
-
-
-# Grading Criteria
-
-## Technical Acceptance Criteria: 40%
-Satisfies all of the preceding acceptance criteria.
-
-## Deployment: 32%
-Application deployed at live URL.
-
-Application loads with no errors.
-
-Application GitHub URL submitted.
-
-GitHub repository contains application code.
-
-## Application Quality: 15%
-Application resembles the mock-up functionality provided in the Challenge instructions.
-
-## Repository Quality: 13%
-Repository has a unique name.
-
-Repository follows best practices for file structure and naming conventions.
-
-Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-Repository contains multiple descriptive commit messages.
-
-Repository contains a quality README with description, screenshot, link to deployed application.
+## Future Improvements
+- Improving flexbox functionality to make it act in the ways that I want it to (mainly with grow and shrink)
+- Fixing the nav links padding or margin to make sure the links don't move when hovered over
