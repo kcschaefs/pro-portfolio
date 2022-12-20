@@ -71,6 +71,7 @@ nav img:hover {
   background-color: #008C8F;
   box-shadow: 0 0 7px 5px #008C8F;
 }
+
 .containerWork2 .projectCard:hover {
   box-shadow: 0 0 7px 10px #376AA9;
 }
@@ -405,6 +406,25 @@ footer img {
   .containerHead {
     margin-bottom:0px;
   }
+
+  div.container .contact-me a:hover{
+    margin: 0px;
+  }
+
+  a:hover {
+    color: rgb(199, 198, 198);
+    font-weight: normal;
+  }
+  nav img:hover {
+    box-shadow: none;
+    background-color: #222546;
+    border-color: #222546;
+  }
+  .contact-me img:hover {
+    box-shadow: none;
+    background-color: #222546;
+    border-color: #222546;
+  }
 }
 
 /* tablet-ish sizing -----------------------------------------------------*/
@@ -447,5 +467,9 @@ footer img {
 
   div.mainProjectCard {
     margin-right:10px;
+  }
+
+  div.container .contact-me a:hover{
+    margin: 0px;
   }
 }
